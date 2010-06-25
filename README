@@ -1,0 +1,11 @@
+The code implements a heterogeneous stack data structure. Each element in the stack contains data and a string describing its type.
+--> The type has to be managed by the user
+--> Along with push, pop and print operations as in a normal stack, the heterogeneous stack also provides each of this operations by type.
+For example, if you use push_by_type to insert an element, it will push the new element on top of the topmost element of that type in the stack. If there is no element of that type, then the new element is pushed on top of the stack. 
+Similarly pop_by_type pops the topmost element in the stack of the given type.
+--> the print method prints the stack elements along with their types in a bottom to top order
+--> the print_by_type method only prints the elements of the given type
+
+The user must create two pointers of type (struct hetero_stack ) namely, base and top. These can be passed to push or push_by_type for the first element to be pushed. The pointers will automatically be initialised and properly assigned by the push class of methods.
+
+If there are other things you want to see added or suggest, mail me at <eerpini@gmail.com>
