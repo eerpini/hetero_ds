@@ -8,4 +8,5 @@ Similarly pop_by_type pops the topmost element in the stack of the given type.
 
 The user must create two pointers of type (struct hetero_stack ) namely, base and top. These can be passed to push or push_by_type for the first element to be pushed. The pointers will automatically be initialised and properly assigned by the push class of methods.
 
+NOTE : the print(and the print_by_type) method tries to type cast the data and print it in the correct type if the type is one among string, int, double. In all the other cases the data in each element is printed as a character buffer to the screen.
 If there are other things you want to see added or suggest, mail me at <eerpini@gmail.com>
